@@ -1,0 +1,18 @@
+
+<% users.forEach(user =>{%>
+<tr>
+    <!-- <td style="visibility: hidden;"><%= user._id %></td> -->
+    <td><%= user.name %></td>
+    <td><%= user.email %></td>
+    <td><%= user.gender %></td>
+    <td><%= user.status %></td>
+    <td>
+        <a href="update_user?id=<%= user._id %>" class="btn border-shadow update">
+            <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+        </a>
+        <a class="btn border-shadow delete" data-id="<%= user._id %>">
+            <span class="text-gradient"><i class="fas fa-recycle"></i></span>
+        </a>
+    </td>
+</tr>
+<%})%>
