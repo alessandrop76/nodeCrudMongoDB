@@ -2,3 +2,5 @@
 /config.env
 *.txt
 node_modules/
+/relogio
+.pub
